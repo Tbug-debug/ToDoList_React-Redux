@@ -139,7 +139,7 @@ function Home() {
           </Doing>
           <ToDoneBox>
             <div>
-              <h1>다 된일</h1>
+              <h1>다 한일</h1>
             </div>
             <DoingOut>
               {todo?.map((todo) =>
