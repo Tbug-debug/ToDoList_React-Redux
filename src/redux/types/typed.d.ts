@@ -6,17 +6,19 @@ declare global {
     text: string;
     body: string;
   };
+
   type DeleteToDoAction = {
     type: typeof DELETE;
     id: number;
   };
+
   type MoveToDoAction = {
     type: typeof MOVEDON;
     id: number;
     isDon: boolean;
   };
 
-  export interface ToDo {
+  interface ToDo {
     text: string;
     body: string;
     id: number;
