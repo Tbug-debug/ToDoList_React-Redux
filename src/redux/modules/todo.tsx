@@ -1,5 +1,3 @@
-import { ToDo, ToDoAction } from "../type/typed";
-
 export const ADD = "ADD";
 export const DELETE = "DELETE";
 export const MOVEDON = "MOVEDON";
