@@ -1,4 +1,4 @@
-import { ADD, DELETE, MOVEDON } from "../redux/modules/todo";
+import { ADD, DELETE, MOVEDON } from "../modules/todo";
 
 export interface AddToDoAction {
   type: typeof ADD;

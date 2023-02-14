@@ -1,4 +1,4 @@
-import { ToDo, ToDoAction } from "../../type/typed";
+import { ToDo, ToDoAction } from "../type/typed";
 
 export const ADD = "ADD";
 export const DELETE = "DELETE";
