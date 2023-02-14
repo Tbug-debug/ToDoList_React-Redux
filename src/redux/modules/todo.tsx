@@ -1,23 +1,8 @@
-const ADD = "ADD";
-const DELETE = "DELETE";
-const MOVEDON = "MOVEDON";
+import { ToDo, ToDoAction } from "../../type/typed";
 
-interface AddToDoAction {
-  type: typeof ADD;
-  text: string;
-  body: string;
-}
-
-interface DeleteToDoAction {
-  type: typeof DELETE;
-  id: number;
-}
-
-interface MoveToDoAction {
-  type: typeof MOVEDON;
-  id: number;
-  isDon: boolean;
-}
+export const ADD = "ADD";
+export const DELETE = "DELETE";
+export const MOVEDON = "MOVEDON";
 
 export const addToDo = (text: string, body: string) => {
   return {
@@ -41,15 +26,6 @@ export const moveToDo = (id: number, isDon: boolean) => {
     isDon,
   };
 };
-
-export interface ToDo {
-  text: string;
-  body: string;
-  id: number;
-  isDon: boolean;
-}
-
-export type ToDoAction = AddToDoAction | DeleteToDoAction | MoveToDoAction;
 
 const reducer = (state: ToDo[] = [], action: ToDoAction) => {
   switch (action.type) {
